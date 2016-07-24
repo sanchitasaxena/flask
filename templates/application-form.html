@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skills-Web</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+{% extends 'base.html' %}
+
+<body>
+
+{% block body %}
+
+
+
+<html>
+<head>
+  <title>Skills-Web</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <style>
+    input { 
+        background-color:yellow; 
+    }
+    .lastname { 
+        font-weight:bold;
+    }
+    p { 
+        border: 2px black solid; padding: 10px;
+    }
+  </style>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+  <h1>Application Form</h1>
+    <div id="explanatory-text">
+      <p>
+        Post-ironic keffiyeh ennui, gochujang bushwick YOLO dreamcatcher forage. Bitters wayfarers hoodie man bun mlkshk hashtag bicycle rights, gluten-free pitchfork asymmetrical master cleanse. Pop-up sustainable bushwick, echo park chambray cold-pressed leggings whatever quinoa hashtag skateboard. Plaid next level cornhole, forage kogi trust fund sartorial hammock salvia raw denim gochujang pickled cardigan kombucha. Leggings mixtape pour-over knausgaard. Venmo sartorial kogi man braid, godard selvage whatever polaroid ugh. Pinterest man braid four loko, shoreditch four dollar toast salvia mustache thundercats kickstarter asymmetrical shabby chic irony photo booth pitchfork.
+      </p>
+    </div>
+
+  <div id="application">
+      <form action="application-response.html" method="POST">
+        <label for="first_name">First Name: <input id="first_name" type="text" name="first_name" /></label><br /><br />
+        <label for="last_name">Last Name: <input class="lastname" id="last_name" type="text" name="last_name" /></label><br /><br />
+        <label for="salary">Salary Requirement: <input class="text" id="salary" type="text" name="salary"></label><br /><br />
+        <label for="position">Position:</label>
+        <select id="position" name="position">
+          <option value="software">Software Engineer</option>
+          <option value="quality">QA Engineer</option>
+          <option value="product">Product Manager</option>
+        </select>
+        <br />
+        <br />
+        <input class="button" type="submit">
+      </form>
+  <div>
+{% endblock %}
+
+</body>
+
+</html>
